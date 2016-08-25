@@ -1,7 +1,5 @@
 # 墙内更快地访问apt资源
 
-[Ubuntu Releases and Codename](https://wiki.ubuntu.com/Releases)
-
 切换ubuntu apt-source 到国内镜像源
 
 ## 如何使用
@@ -9,7 +7,7 @@
 如何获得当前运行ubuntu系统版本号
 
 ```
-$> lsb_release -rs
+lsb_release -rs
 ```
 
 ```
@@ -40,3 +38,5 @@ todo 通过脚本自动切回！
 http://wiki.ubuntu.org.cn/%E6%A8%A1%E6%9D%BF:16.04source
 
 https://wiki.debian.org/SourcesList
+
+[Ubuntu Releases and Codename](https://wiki.ubuntu.com/Releases)
