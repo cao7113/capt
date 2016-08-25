@@ -2,6 +2,10 @@
 
 [Ubuntu Releases and Codename](https://wiki.ubuntu.com/Releases)
 
+## 如何使用
+
+curl https://github.com/cao7113/capt/raw/master/capt.sh | bash
+
 ## Apt sources
 
 国内镜像汇总 
