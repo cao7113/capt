@@ -4,19 +4,13 @@
 
 ## 如何使用
 
-如何获得当前运行ubuntu系统版本号
-
 ```
-lsb_release -rs
-```
-
-```
-# 使用默认国内源, 最新镜像 
+# 使用默认国内源 (aliyun)
 curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash
 ```
 
 ```
-# 使用 指定版本, 指定镜像源 暂未完整支持 todo 依赖share中的缓存文件
+# 使用指定镜像源 todo 依赖share中的缓存文件
 curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash -s aliyun
 ```
 
