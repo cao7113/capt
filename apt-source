@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+version=${1:-1604}
+mirror=${2:-cn}
+
+path=$(dirname $0)
+( cd $path && VERSION=$version MIRROR=$mirror rake apt_source )

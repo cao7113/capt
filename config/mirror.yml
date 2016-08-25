@@ -1,0 +1,17 @@
+# China mirrors from 
+# http://wiki.ubuntu.org.cn/%E6%A8%A1%E6%9D%BF:16.04source 
+# 服务器列表
+# 可将 http://cn.archive.ubuntu.com/ubuntu/ 替换为下列任意服务器：
+
+# Ubuntu 官方（欧洲，国内较慢，无同步延迟）
+# http://archive.ubuntu.com/ubuntu/
+# Ubuntu 官方中国（目前是阿里云）
+cn: http://cn.archive.ubuntu.com/ubuntu/
+# 阿里云（北京万网/浙江杭州阿里云服务器双线接入）
+aliyun: http://mirrors.aliyun.com/ubuntu/
+# 网易（广东广州电信/联通千兆双线接入）
+netease: http://mirrors.163.com/ubuntu/
+# 搜狐（山东联通千兆接入）
+sohu: http://mirrors.sohu.com/ubuntu/
+# 中国开源软件中心
+oss: http://mirrors.oss.org.cn/ubuntu/
