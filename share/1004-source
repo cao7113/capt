@@ -1,0 +1,18 @@
+# From http://wiki.ubuntu.org.cn/%E6%A8%A1%E6%9D%BF:10.04source
+
+deb http://cn.archive.ubuntu.com/ubuntu/ lucid main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ lucid-security main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ lucid-updates main restricted universe multiverse
+deb http://cn.archive.ubuntu.com/ubuntu/ lucid-backports main restricted universe multiverse
+##测试版源
+deb http://cn.archive.ubuntu.com/ubuntu/ lucid-proposed main restricted universe multiverse
+# 源码
+deb-src http://cn.archive.ubuntu.com/ubuntu/ lucid main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ lucid-security main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ lucid-updates main restricted universe multiverse
+deb-src http://cn.archive.ubuntu.com/ubuntu/ lucid-backports main restricted universe multiverse
+##测试版源
+deb-src http://cn.archive.ubuntu.com/ubuntu/ lucid-proposed main restricted universe multiverse
+# Canonical 合作伙伴和附加
+deb http://archive.canonical.com/ubuntu/ lucid partner
+deb http://extras.ubuntu.com/ubuntu/ lucid main

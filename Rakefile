@@ -4,7 +4,9 @@ require 'yaml'
 root = File.expand_path('..', __FILE__)
 codenames = YAML.load_file(File.join(root, 'config/codename.yml'))
 codenames = codenames.inject({}) do | r, (k, v) |
-  r[k] = v.to_s
+  vs = v.to_s
+  vs = vs.size < 5 ? "#{vs}0" : vs
+  r[k] = vs
   r
 end
 # without dot
@@ -41,4 +43,12 @@ end
 desc 'get codenames'
 task :codenames do
   puts codenames
+end
+
+desc 'generate all source'
+task :cache_sources do
+  versions.keys.each do | v|
+    `./gen-source #{v} > share/#{v}-source`
+  end
+  puts "generated cached sources in share"
 end

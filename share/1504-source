@@ -1,3 +1,5 @@
+# From http://wiki.ubuntu.org.cn/%E6%A8%A1%E6%9D%BF:15.04source
+
 deb http://cn.archive.ubuntu.com/ubuntu/ vivid main restricted universe multiverse
 deb http://cn.archive.ubuntu.com/ubuntu/ vivid-security main restricted universe multiverse
 deb http://cn.archive.ubuntu.com/ubuntu/ vivid-updates main restricted universe multiverse

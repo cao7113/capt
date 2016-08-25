@@ -10,7 +10,7 @@ function bakup_once(){
   suffix=capt-origin
   target=$raw.$suffix
   [ -e "$target" ] || {
-    mv $raw $target
+    sudo mv $raw $target
   } 
 }
 
@@ -18,6 +18,7 @@ bakup_once /etc/apt/sources.list
 bakup_once /etc/apt/sources.list.d
 
 tag=${1:-1604}
+# todo 移除可能的dot .
 url=${SOURCE_URL:-https://github.com/cao7113/capt/raw/master/share/${tag}-source}
 
-wget -O /etc/apt/sources.list $url
+sudo wget -O /etc/apt/sources.list $url
