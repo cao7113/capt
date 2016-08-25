@@ -7,14 +7,25 @@
 ## 如何使用
 
 如何获得当前运行ubuntu系统版本号
-$> lsb_release -rs
 
+```
+$> lsb_release -rs
+```
+
+```
 # 使用默认国内源, 最新镜像 
 curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash
+```
+
+```
 # 使用默认国内源, 指定版本
 curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash -s 1404
+```
+
+```
 # 使用 指定版本, 指定镜像源 todo 暂未支持
 curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash -s 1404-aliyun
+```
 
 ## 工作原理及如何撤回
 
