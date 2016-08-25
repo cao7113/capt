@@ -16,13 +16,8 @@ curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash
 ```
 
 ```
-# 使用默认国内源, 指定版本
-curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash -s 1404
-```
-
-```
-# 使用 指定版本, 指定镜像源 todo 暂未支持
-curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash -s 1404-aliyun
+# 使用 指定版本, 指定镜像源 暂未完整支持 todo 依赖share中的缓存文件
+curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash -s aliyun
 ```
 
 ## 工作原理及如何撤回

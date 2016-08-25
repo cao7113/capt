@@ -1,0 +1,18 @@
+# From http://wiki.ubuntu.org.cn/%E6%A8%A1%E6%9D%BF:15.10source
+
+deb http://mirrors.aliyun.com/ubuntu/ wily main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ wily-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ wily-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ wily-backports main restricted universe multiverse
+##测试版源
+deb http://mirrors.aliyun.com/ubuntu/ wily-proposed main restricted universe multiverse
+# 源码
+deb-src http://mirrors.aliyun.com/ubuntu/ wily main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ wily-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ wily-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ wily-backports main restricted universe multiverse
+##测试版源
+deb-src http://mirrors.aliyun.com/ubuntu/ wily-proposed main restricted universe multiverse
+# Canonical 合作伙伴和附加
+deb http://archive.canonical.com/ubuntu/ wily partner
+deb http://extras.ubuntu.com/ubuntu/ wily main
