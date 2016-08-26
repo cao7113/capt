@@ -6,12 +6,12 @@
 
 ```
 # 使用默认国内源 (aliyun)
-curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash
+curl -sSL https://github.com/cao7113/capt/raw/master/install.sh | bash
 ```
 
 ```
 # 使用指定镜像源 (依赖share中的缓存文件存在)
-curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash -s aliyun
+curl -sSL https://github.com/cao7113/capt/raw/master/install.sh | bash -s aliyun
 ```
 
 ## 工作原理及如何撤回
