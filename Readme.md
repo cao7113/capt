@@ -10,7 +10,7 @@ curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash
 ```
 
 ```
-# 使用指定镜像源 todo 依赖share中的缓存文件
+# 使用指定镜像源 (依赖share中的缓存文件存在)
 curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash -s aliyun
 ```
 
@@ -19,6 +19,12 @@ curl -sSL https://github.com/cao7113/capt/raw/master/capt.sh | bash -s aliyun
 备份了原来的文件，所以在/et/apt/中将备份文件恢复即可
 
 todo 通过脚本自动切回！
+
+## Todo
+
+对/etc/source.list.d 移除是否合适？
+如果添加了其它源，这样是不是有问题
+研究source.list工作原理
 
 ## Apt sources
 

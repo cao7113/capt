@@ -17,10 +17,10 @@ end.invert
 mirrors = YAML.load_file(File.join(root, 'config/mirror.yml'))
 template = File.read(File.join(root, 'config/apt-source'))
 
-task :default => :apt_source 
+task :default => :gen_source 
 
 desc 'get apt source'
-task :apt_source do
+task :gen_source do
   version = ENV['VERSION'] || '1604'
   mirror = ENV['MIRROR'] || 'aliyun'
 
@@ -47,8 +47,12 @@ end
 
 desc 'generate all source'
 task :cache_sources do
+  mirror = ENV['MIRROR']
+  puts "==use mirror: #{mirror}!" if mirror
   versions.keys.each do | v|
-    `./gen-source #{v} > share/#{v}-source`
+    tag = v
+    tag += "-#{mirror}" if mirror
+    `./gen-source #{v} #{mirror} > share/#{tag}-source`
   end
   puts "generated cached sources in share"
 end

@@ -13,6 +13,6 @@ deb-src http://cn.archive.ubuntu.com/ubuntu/ precise-updates main restricted uni
 deb-src http://cn.archive.ubuntu.com/ubuntu/ precise-backports main restricted universe multiverse
 ##测试版源
 deb-src http://cn.archive.ubuntu.com/ubuntu/ precise-proposed main restricted universe multiverse
-# Canonical 合作伙伴和附加
-deb http://archive.canonical.com/ubuntu/ precise partner
-deb http://extras.ubuntu.com/ubuntu/ precise main
+## Canonical 合作伙伴和附加
+#deb http://archive.canonical.com/ubuntu/ precise partner
+#deb http://extras.ubuntu.com/ubuntu/ precise main
