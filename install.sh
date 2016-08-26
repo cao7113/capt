@@ -26,3 +26,6 @@ url=${SOURCE_URL:-https://github.com/cao7113/capt/raw/master/share/${tag}-source
 echo == get source from: $url
 
 sudo wget -O /etc/apt/sources.list $url
+sudo apt-get update
+
+echo ==finished change sources
