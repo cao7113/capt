@@ -6,7 +6,7 @@ set -e
 
 function bakup_once(){
   raw=$1
-  suffix=capt-origin
+  suffix=capt.bak
   target=$raw.$suffix
   [ -e "$target" ] || {
     sudo mv $raw $target
@@ -14,7 +14,7 @@ function bakup_once(){
 }
 
 bakup_once /etc/apt/sources.list
-bakup_once /etc/apt/sources.list.d
+#bakup_once /etc/apt/sources.list.d
 
 version=$(lsb_release -rs)
 # 移除可能的dot, 16.04 --> 1604

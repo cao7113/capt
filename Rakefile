@@ -15,7 +15,7 @@ versions = codenames.inject({}) do | r, (k, v) |
   r
 end.invert
 mirrors = YAML.load_file(File.join(root, 'config/mirror.yml'))
-template = File.read(File.join(root, 'config/apt-source'))
+template = File.read(File.join(root, 'config/sources.list.tmpl'))
 
 task :default => :gen_source 
 
