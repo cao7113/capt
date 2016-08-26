@@ -12,7 +12,7 @@ deb-src http://mirrors.aliyun.com/ubuntu/ utopic-security main restricted univer
 deb-src http://mirrors.aliyun.com/ubuntu/ utopic-updates main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ utopic-backports main restricted universe multiverse
 ##测试版源
-deb-src http://mirrors.aliyun.com/ubuntu/ utopic-proposed main restricted universe multiverse
+##deb-src http://mirrors.aliyun.com/ubuntu/ utopic-proposed main restricted universe multiverse
 ## Canonical 合作伙伴和附加
 #deb http://archive.canonical.com/ubuntu/ utopic partner
 #deb http://extras.ubuntu.com/ubuntu/ utopic main
