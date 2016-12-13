@@ -20,7 +20,7 @@ bakup_once /etc/apt/sources.list
 #bakup_once /etc/apt/sources.list.d
 
 # docker下没有lsb_release
-if which lsb_release &>/devl/null; then
+if which lsb_release &>/dev/null; then
   version=$(lsb_release -rs)
 else
   version=${UBUNTU_VERSION:-1604}
