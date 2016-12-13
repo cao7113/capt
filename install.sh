@@ -20,6 +20,10 @@ bakup_once /etc/apt/sources.list
 #bakup_once /etc/apt/sources.list.d
 
 # docker下没有lsb_release
+which lsb_release &>/dev/null || {
+  $sudo_cmd apt-get -y install lsb-release
+}
+
 if which lsb_release &>/dev/null; then
   version=$(lsb_release -rs)
 else
