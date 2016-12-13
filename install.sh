@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-# Usage: $0 [aliyun]
+# $0 [aliyun]
+# UBUNTU_VERSION=1604 $0 
 
 sudo_cmd=''
 which sudo &> /dev/null && sudo_cmd='sudo'
@@ -18,7 +19,12 @@ function bakup_once(){
 bakup_once /etc/apt/sources.list
 #bakup_once /etc/apt/sources.list.d
 
-version=$(lsb_release -rs)
+# docker下没有lsb_release
+if which lsb_release &>/devl/null; then
+  version=$(lsb_release -rs)
+else
+  version=${UBUNTU_VERSION:-1604}
+fi
 # 移除可能的dot, 16.04 --> 1604
 tag=${version//.}
 if [ $# -gt 0 ]; then
@@ -31,9 +37,11 @@ if [ -e $lfile ]; then
 else
   url=${SOURCE_URL:-https://github.com/cao7113/capt/raw/master/share/${tag}-source}
   echo == get source from: $url
-  $sudo_cmd wget -O /etc/apt/sources.list $url
+  #$sudo_cmd wget -O /etc/apt/sources.list $url
+  $sudo_cmd curl -sSL $url > /etc/apt/sources.list
 fi
 
 $sudo_cmd apt-get -y update
+$sudo_cmd apt-get -y install vim
 
 echo ==finished change sources
