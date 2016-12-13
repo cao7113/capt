@@ -21,8 +21,9 @@ bakup_once /etc/apt/sources.list
 
 # docker下没有lsb_release
 which lsb_release &>/dev/null || {
-  apt-get -y update
+  $sudo_cmd apt-get -y update
   $sudo_cmd apt-get -y install lsb-release
+  echo ==installing lsb_release
 }
 
 if which lsb_release &>/dev/null; then
