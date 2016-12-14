@@ -16,9 +16,6 @@ function bakup_once(){
   } 
 }
 
-bakup_once /etc/apt/sources.list
-#bakup_once /etc/apt/sources.list.d
-
 # docker下没有lsb_release
 which lsb_release &>/dev/null || {
   $sudo_cmd apt-get -y update
@@ -37,13 +34,15 @@ if [ $# -gt 0 ]; then
   tag=$tag-$1
 fi
 
+bakup_once /etc/apt/sources.list
+#bakup_once /etc/apt/sources.list.d
+
 lfile=$(dirname $0)/share/${tag}-source
 if [ -e $lfile ]; then
   $sudo_cmd cp -f $lfile /etc/apt/sources.list
 else
   url=${SOURCE_URL:-https://github.com/cao7113/capt/raw/master/share/${tag}-source}
   echo == get source from: $url
-  #$sudo_cmd wget -O /etc/apt/sources.list $url
   $sudo_cmd curl -sSL $url > /etc/apt/sources.list
 fi
 
