@@ -16,12 +16,12 @@ function bakup_once(){
   } 
 }
 
-# docker下没有lsb_release
-which lsb_release &>/dev/null || {
-  $sudo_cmd apt-get -y update
-  $sudo_cmd apt-get -y install lsb-release
-  echo ==installing lsb_release
-}
+## docker下没有lsb_release
+#which lsb_release &>/dev/null || {
+  #$sudo_cmd apt-get -y update # slow pint
+  #$sudo_cmd apt-get -y install lsb-release
+  #echo ==installing lsb_release
+#}
 
 if which lsb_release &>/dev/null; then
   version=$(lsb_release -rs)
